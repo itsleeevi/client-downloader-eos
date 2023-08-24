@@ -10,7 +10,7 @@ const port = process.env.PORT || PORT;
 
 app.get("/client.zip", (req, res) => {
   const remoteUrl =
-    "https://media.githubusercontent.com/media/leeeevi/downloader/main/public/client.zip";
+    "https://media.githubusercontent.com/media/leeeevi/client-downloader-eos/main/files/client.zip";
 
   // Forward the request to the remote URL
   req.pipe(request(remoteUrl)).pipe(res);
@@ -18,7 +18,7 @@ app.get("/client.zip", (req, res) => {
 
 app.get("/Empire_of_Sight_Launcher_Installer.exe", (req, res) => {
   const remoteUrl =
-    "https://media.githubusercontent.com/media/leeeevi/downloader/main/public/Empire_of_Sight_Launcher_Installer.exe";
+    "https://media.githubusercontent.com/media/leeeevi/client-downloader-eos/main/files/Empire_of_Sight_Launcher_Installer.exe";
 
   // Forward the request to the remote URL
   req.pipe(request(remoteUrl)).pipe(res);
